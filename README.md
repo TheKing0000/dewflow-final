@@ -4,3 +4,10 @@ if (item.route === "/profile") {
 if (userId) item.route = `${item.route}/${userId}`;
 else return null;
 }
+
+<Z>
+    <X
+    className=" lg:hidden"
+    />
+    <Y className="max-lg:hidden">....</Y>
+</Z>
