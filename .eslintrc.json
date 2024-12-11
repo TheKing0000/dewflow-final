@@ -12,22 +12,14 @@
       "error",
       {
         "groups": [
-          "builtin", // Built-in types are first
-          "external", // External libraries
-          "internal", // Internal modules
-          ["parent", "sibling"], // Parent and sibling types can be mingled together
-          "index", // Then the index file
-          "object" // Object imports
+          "builtin", // Node.js modules (e.g., 'fs', 'path')
+          "external", // Packages from 'node_modules'
+          "internal", // Internal aliases like '@app/**'
+          ["parent", "sibling"], // Relative imports
+          "index", // Index files
+          "object" // Dynamic imports
         ],
-        "newlines-between": "always",
-        "pathGroups": [
-          {
-            "pattern": "@app/**",
-            "group": "external",
-            "position": "after"
-          }
-        ],
-        "pathGroupsExcludedImportTypes": ["builtin"],
+        "newlines-between": "always-and-inside-groups", // Requires newlines only between groups
         "alphabetize": {
           "order": "asc",
           "caseInsensitive": true
@@ -35,7 +27,6 @@
       }
     ]
   },
-  "ignorePatterns": ["components/ui/**"],
   "overrides": [
     {
       "files": ["*.ts", "*.tsx"],
