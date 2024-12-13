@@ -43,6 +43,7 @@ const NavLinks = ({
             )}
           >
             <Image
+              unoptimized
               src={item.imgURL}
               alt={item.label}
               width={20}

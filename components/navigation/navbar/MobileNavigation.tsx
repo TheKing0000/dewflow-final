@@ -19,6 +19,7 @@ const MobileNavigation = () => {
     <Sheet>
       <SheetTrigger asChild>
         <Image
+          unoptimized
           src="/icons/hamburger.svg"
           width={36}
           height={36}
@@ -33,6 +34,7 @@ const MobileNavigation = () => {
         <SheetTitle className="hidden">Navigation</SheetTitle>
         <Link href="/" className="flex items-center gap-1">
           <Image
+            unoptimized
             src="/images/site-logo.svg"
             width={23}
             height={23}

@@ -36,6 +36,7 @@ const RightSidebar = () => {
               <p className="body-medium text-dark500_light700">{title}</p>
 
               <Image
+                unoptimized
                 src="/icons/chevron-right.svg"
                 alt="Chevron"
                 width={20}

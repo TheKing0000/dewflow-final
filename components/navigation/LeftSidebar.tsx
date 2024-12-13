@@ -20,6 +20,7 @@ const LeftSidebar = async () => {
         >
           <Link href={ROUTES.SIGN_IN}>
             <Image
+              unoptimized
               alt="Account"
               width={20}
               height={20}
@@ -36,6 +37,7 @@ const LeftSidebar = async () => {
         >
           <Link href={ROUTES.SIGN_UP}>
             <Image
+              unoptimized
               alt="Account"
               width={20}
               height={20}
