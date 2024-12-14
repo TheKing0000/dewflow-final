@@ -48,7 +48,6 @@ const TagCard = ({
             width={12}
             height={12}
             alt="close icon"
-            unoptimized={true}
             className="cursor-pointer object-contain invert-0 dark:invert"
             onClick={handleRemove}
           />
