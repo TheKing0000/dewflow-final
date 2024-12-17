@@ -1,7 +1,6 @@
 import mongoose, { Mongoose } from "mongoose";
 
-import "@/database";
-
+// Special connection string
 const MONGODB_URI = process.env.MONGODB_URI as string;
 
 if (!MONGODB_URI) {
@@ -32,12 +31,14 @@ const dbConnect = async (): Promise<Mongoose> => {
   if (!cached.promise) {
     cached.promise = mongoose
       .connect(MONGODB_URI, {
-        dbName: "Cluster0",
+        dbName: "devflow",
       })
       .then((result) => {
+        console.log("Connected to MongoDB");
         return result;
       })
       .catch((error) => {
+        console.error("Error connecting to MongoDB", error);
         throw error;
       });
   }

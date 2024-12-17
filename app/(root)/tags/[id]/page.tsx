@@ -1,4 +1,4 @@
-const Tags = () => {
+const Tags = async () => {
   return <div>Tags</div>;
 };
 
